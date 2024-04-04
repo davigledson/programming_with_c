@@ -5,6 +5,6 @@ main(){
     int n1 = 0;
     int n2 = 0;
     scanf("%d %d",&n1,&n2);
-    float resto = n1 / n2;
+   
     printf(" Quoeficiente: %d \n Resto: %d", n1 / n2 , n1 % n2);
 }
