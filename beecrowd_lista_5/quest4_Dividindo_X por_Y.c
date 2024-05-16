@@ -3,7 +3,7 @@
 int main() {
  int N=0, contador=0;
  float X=0,Y=0;
- double calculo=0;
+
  scanf("%d",&N);
  while(contador <N){
      scanf("%f %f",&X,&Y);
