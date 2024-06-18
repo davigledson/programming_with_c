@@ -32,23 +32,18 @@
      
 
     
-       // strcmp(palavra1,palavra2);
-        // for(i=0;i<strlen(palavra1);i++){
-        //     if(palavra1[i] != palavra2[i]){
-        //             verificar=1;
-        //     }
-        // }
-    
-
-    if(strcmp(palavra1,palavra2) ==0){
-        printf("As palavras  sao iguais\n");
-    } else {
-         printf("As palavras nao sao iguais\n");
+        int len = strlen(palavra1);
+    for (i = 0; i < len; i++) {
+        palavra_ao_contrario[i] = palavra1[len - i - 1];
     }
+    palavra_ao_contrario[len] = '\0';  // Termina a string corretamente
 
-    for(i=0;i<strlen(palavra1);i++){
-        //TERMINA EM CASA
-           // palavra_ao_contrario[i] != palavra1[strlen(palavra1)-i];
+    printf("Palavra 1 ao contrário: %s\n", palavra_ao_contrario);
+
+    if (strcmp(palavra1, palavra_ao_contrario) == 0) {
+        printf("A palavra 1 e um palindromo\n");
+    } else {
+        printf("A palavra 1 nao é um palindromo\n");
     }
 
     printf(" palavra 1 ao contrario: %s\n", palavra_ao_contrario);
